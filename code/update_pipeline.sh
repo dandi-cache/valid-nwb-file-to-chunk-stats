@@ -27,6 +27,9 @@
 #   TESTING      Set to "true" to run update.py in testing mode: it processes only a few
 #                items and reads/writes derivatives/testing.jsonl, leaving the real cache
 #                untouched. Empty/unset means a complete run.
+#   LIMIT        Batch size cap passed to update.py's `--limit` on a complete run. Streaming
+#                and walking each NWB file is heavy, so a single run advances at most this
+#                many newly valid content IDs (default: 500). Ignored in testing mode.
 #   GITHUB_SHA   Recorded in the provenance message to link results to the code commit.
 #   RUNNER_TEMP  Scratch directory for the working clones (default: /tmp).
 set -euo pipefail
@@ -35,12 +38,15 @@ set -euo pipefail
 : "${WORKSPACE:?WORKSPACE must be set}"
 : "${IMAGE:?IMAGE must be set}"
 TESTING="${TESTING:-}"
+LIMIT="${LIMIT:-500}"
 GITHUB_SHA="${GITHUB_SHA:-unknown}"
 
-# Only pass --testing when requested, so a normal run processes the full cache.
-TESTING_ARG=""
+# A testing run caps its own batch and writes derivatives/testing.jsonl; a complete run is
+# bounded by --limit instead, so the two flags are mutually exclusive here.
 if [ "${TESTING}" = "true" ]; then
-  TESTING_ARG="--testing"
+  RUN_ARG="--testing"
+else
+  RUN_ARG="--limit ${LIMIT}"
 fi
 
 BOT_NAME="github-actions[bot]"
@@ -73,13 +79,13 @@ push_with_retry() {
   retry_with_backoff "git $*" git "$@"
 }
 
-# TODO: pick this cache's input mode — upstream DataLad dataset, local `sourcedata`
-# directory, or first-in-chain network fetch. The three modes, and how these variables
-# drive them, are documented in .claude/skills/setup-cache/SKILL.md (step 2). Leave
-# INPUT_SUBDATASET_URL empty for the two non-subdataset modes; the subdataset handling
-# below is then skipped.
-INPUT_SUBDATASET_URL=""  # e.g. https://github.com/dandi-cache/<input-dataset-name>.git
-INPUT_SUBDATASET_PATH="sourcedata/<input-dataset-name>"
+# Input mode: upstream DataLad dataset. content-id-to-valid-nwb-file is registered as an input
+# subdataset, cloned into the derivatives dataset and pinned via `--input` in the provenance of
+# every run, so each result records the exact input commit it was computed from. The NWB files
+# themselves are then streamed from the public DANDI S3 bucket at run time (the container is not
+# network-isolated), so no separate input pins those.
+INPUT_SUBDATASET_URL="https://github.com/dandi-cache/content-id-to-valid-nwb-file.git"
+INPUT_SUBDATASET_PATH="sourcedata/content-id-to-valid-nwb-file"
 INPUT_SUBDATASET_BRANCH="derivatives"
 
 DS="${RUNNER_TEMP:-/tmp}/derivatives-dataset"
@@ -189,8 +195,8 @@ fi
 datalad containers-run -n pipeline --explicit \
   "${RUN_INPUT_ARGS[@]}" \
   --output derivatives \
-  -m "Update <cache-name> (code @ ${GITHUB_SHA}; image ${DIGEST})" \
-  "python /code/update.py --base-directory /tmp ${TESTING_ARG}"
+  -m "Update valid-nwb-file-to-chunk-stats (code @ ${GITHUB_SHA}; image ${DIGEST})" \
+  "python /code/update.py --base-directory /tmp ${RUN_ARG}"
 
 # Publish the full results to the `derivatives` branch.
 push_with_retry -C "${DS}" push "${REPO_URL}" HEAD:derivatives
@@ -201,13 +207,13 @@ push_with_retry -C "${DS}" push "${REPO_URL}" HEAD:derivatives
 # complete run).
 uv run --project "${WORKSPACE}/envs" python "${WORKSPACE}/code/compress.py" --base-directory "${DS}"
 mkdir -p "${DISTDIR}/derivatives"
-if [ -f "${DS}/derivatives/<cache_name>.jsonl.gz" ]; then
-  cp "${DS}/derivatives/<cache_name>.jsonl.gz" "${DISTDIR}/derivatives/"
+if [ -f "${DS}/derivatives/valid_nwb_file_to_chunk_stats.jsonl.gz" ]; then
+  cp "${DS}/derivatives/valid_nwb_file_to_chunk_stats.jsonl.gz" "${DISTDIR}/derivatives/"
 fi
 cp "${WORKSPACE}/dataset_description.json" "${DISTDIR}/dataset_description.json"
 git -C "${DISTDIR}" init -q -b dist
 git -C "${DISTDIR}" config user.name "${BOT_NAME}"
 git -C "${DISTDIR}" config user.email "${BOT_EMAIL}"
 git -C "${DISTDIR}" add dataset_description.json derivatives
-git -C "${DISTDIR}" commit -q -m "Publish <cache-name>"
+git -C "${DISTDIR}" commit -q -m "Publish valid-nwb-file-to-chunk-stats"
 push_with_retry -C "${DISTDIR}" push -f "${REPO_URL}" dist:dist
