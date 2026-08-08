@@ -1,0 +1,4 @@
+[submodule "sourcedata/content-id-to-valid-nwb-file"]
+	path = sourcedata/content-id-to-valid-nwb-file
+	url = https://github.com/dandi-cache/content-id-to-valid-nwb-file.git
+	datalad-url = https://github.com/dandi-cache/content-id-to-valid-nwb-file.git
