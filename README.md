@@ -12,12 +12,10 @@ Each line of the derivatives is a JSON object of the form:
 {"<content_id>": {
   "n_datasets": 412,
   "n_chunked": 99,
-  "fraction_chunked": 0.24,
   "total_chunks": 15703,
   "max_chunks_in_dataset": 9421,
   "median_chunk_count": 12.0,
   "n_compressed": 96,
-  "fraction_compressed": 0.23,
   "total_logical_bytes": 84213902144,
   "n_virtual_or_external": 0
 }}
@@ -27,14 +25,14 @@ Each line of the derivatives is a JSON object of the form:
 | --- | --- |
 | `n_datasets` | Number of HDF5 datasets in the file. Groups and attributes are not datasets and are not counted. |
 | `n_chunked` | How many of those datasets use the chunked layout. |
-| `fraction_chunked` | `n_chunked / n_datasets`. |
 | `total_chunks` | Sum of each dataset's chunk count — a lower bound on the range requests needed to read the whole file. A contiguous or compact dataset counts as one. |
 | `max_chunks_in_dataset` | The largest per-dataset chunk count. |
 | `median_chunk_count` | Median chunk count over the *chunked* datasets only; `null` when the file has none. |
 | `n_compressed` | How many datasets have a non-empty filter pipeline. |
-| `fraction_compressed` | `n_compressed / n_datasets`. |
 | `total_logical_bytes` | Sum over datasets of `product(shape) * dtype.itemsize` — the uncompressed size of the data, not the size of the file on disk. |
 | `n_virtual_or_external` | Datasets excluded from every statistic above because their bytes live elsewhere (a virtual dataset's sources, or an external storage sidecar). |
+
+The chunked and compressed fractions are `n_chunked / n_datasets` and `n_compressed / n_datasets`; only the counts are stored, since either fraction is a division away.
 
 A dataset's chunk count is derived purely from its current shape and chunk shape as `product(ceil(shape[i] / chunks[i]))`, so measuring a file never reads its chunk indexes over the network. Unlimited (`maxshape`) dimensions are measured at their present extent.
 

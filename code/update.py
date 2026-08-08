@@ -166,17 +166,17 @@ def compute_chunk_statistics(h5py_file: h5py.File) -> dict:
     n_chunked = len(chunked_chunk_counts)
     n_compressed = sum(1 for statistics in per_dataset_statistics if statistics["is_compressed"])
 
+    # The chunked and compressed fractions are `n_chunked / n_datasets` and
+    # `n_compressed / n_datasets`; consumers can divide, so only the counts are stored.
     return {
         "n_datasets": n_datasets,
         "n_chunked": n_chunked,
-        "fraction_chunked": n_chunked / n_datasets if n_datasets > 0 else 0.0,
         "total_chunks": sum(chunk_counts),
         "max_chunks_in_dataset": max(chunk_counts, default=0),
         # The median is only meaningful over the datasets that actually have a chunk grid;
         # with none of them, there is no value to report.
         "median_chunk_count": float(numpy.median(chunked_chunk_counts)) if n_chunked > 0 else None,
         "n_compressed": n_compressed,
-        "fraction_compressed": n_compressed / n_datasets if n_datasets > 0 else 0.0,
         # Summed as Python ints; the total across a large NWB file exceeds float precision.
         "total_logical_bytes": sum(statistics["logical_bytes"] for statistics in per_dataset_statistics),
         "n_virtual_or_external": n_virtual_or_external,
