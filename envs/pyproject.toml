@@ -1,9 +1,15 @@
 [project]
-name = "<cache-name>"
+name = "valid-nwb-file-to-chunk-stats"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
     "datalad",
     "datalad-container",
-    # TODO: add this cache's processing dependencies used by code/update.py.
+    # Processing dependencies used by code/update.py. HDF5 NWB files are streamed from the
+    # public DANDI S3 bucket with remfile + h5py and inspected through the h5py low-level
+    # API; numpy supplies the median over the per-dataset chunk counts. Zarr assets are
+    # recorded as `null` rather than read, so no Zarr stack is needed here.
+    "h5py",
+    "numpy",
+    "remfile",
 ]

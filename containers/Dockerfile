@@ -13,8 +13,8 @@
 FROM neurodebian:trixie
 
 # The source label associates the image on the GitHub Container Registry with this repository.
-LABEL org.opencontainers.image.source="https://github.com/dandi-cache/<cache-name>"
-LABEL org.opencontainers.image.description="The pinned runtime environment for the DANDI Cache <cache-name> update pipeline."
+LABEL org.opencontainers.image.source="https://github.com/dandi-cache/valid-nwb-file-to-chunk-stats"
+LABEL org.opencontainers.image.description="The pinned runtime environment for the DANDI Cache valid-nwb-file-to-chunk-stats update pipeline."
 
 # git-annex (for DataLad / annex provenance), Python, and the basics for cloning and TLS.
 RUN apt-get update \
