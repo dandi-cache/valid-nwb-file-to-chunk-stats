@@ -6,7 +6,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 8 * * *"  # Daily at 08:00 UTC, a few hours after the upstream cache updates.
+    - cron: "0 8/3 * * *"  # Daily at 08:00 UTC, a few hours after the upstream cache updates.
   workflow_dispatch:
     inputs:
       testing:
