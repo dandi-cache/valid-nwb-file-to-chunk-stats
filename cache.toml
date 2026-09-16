@@ -1,0 +1,30 @@
+# The complete declarative description of this cache.
+#
+# One file, read by both the shared orchestration and this cache's own update code, so the two
+# cannot disagree. It replaces what used to be spread across `code/update_pipeline.sh` (the input
+# subdataset URL, path and branch, the output file name, the entry point, the batch size), the
+# update workflow (the image reference and a second batch size), `dataset_description.json`, and
+# the constants at the top of `code/update.py`.
+
+[cache]
+name = "valid-nwb-file-to-chunk-stats"
+
+# Upstream cache, registered as a DataLad input subdataset and pinned in every run's provenance,
+# so each result records the exact input commit it was computed from.
+#
+# `lookup` because this cache reads it as one `{content_id: is_valid}` mapping and selects the
+# entries marked valid.
+[[inputs]]
+name = "content-id-to-valid-nwb-file"
+
+# Streaming and walking each file is heavy enough that a single run cannot clear the backlog, so a
+# run advances it by a bounded batch. The workflow and the shell script each carried their own copy
+# of this number; it is declared once here.
+[operations.update]
+limit = 500
+
+# The published branches describe this repository as a BIDS study dataset, through a
+# `dataset_description.json` with `DatasetType: "study"`. The pipeline renders that file from this
+# section at the start of every run, so the repository no longer carries it.
+[description]
+authors = ["Cody Baker"]
