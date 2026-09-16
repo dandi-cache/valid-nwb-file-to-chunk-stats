@@ -1,9 +1,27 @@
 {
     "Name": "valid-nwb-file-to-chunk-stats",
-    "BIDSVersion": "1.10.0",
+    "BIDSVersion": "1.11.1",
     "DatasetType": "study",
     "License": "CC-BY-4.0",
     "Authors": [
         "Cody Baker"
+    ],
+    "ReferencesAndLinks": [
+        "https://github.com/dandi-cache/valid-nwb-file-to-chunk-stats"
+    ],
+    "SourceDatasets": [
+        {
+            "URL": "https://github.com/dandi-cache/content-id-to-valid-nwb-file.git"
+        }
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "dandi-cache-utils",
+            "CodeURL": "https://github.com/dandi-cache/dandi-cache-utils",
+            "Container": {
+                "ContainerType": "docker",
+                "ContainerTag": "ghcr.io/dandi-cache/valid-nwb-file-to-chunk-stats"
+            }
+        }
     ]
 }

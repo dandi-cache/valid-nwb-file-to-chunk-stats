@@ -3,3 +3,4 @@ __pycache__/
 sourcedata/*
 derivatives/*
 .DS_Store
+logs/*
