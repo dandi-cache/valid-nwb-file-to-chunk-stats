@@ -18,4 +18,14 @@ FROM ghcr.io/dandi-cache/dandi-cache-utils:nwb
 LABEL org.opencontainers.image.source="https://github.com/dandi-cache/valid-nwb-file-to-chunk-stats"
 LABEL org.opencontainers.image.description="The pinned runtime environment for the DANDI Cache valid-nwb-file-to-chunk-stats update pipeline."
 
+# This cache's own processing dependencies, installed whether or not it has any: an empty
+# `dependencies` list resolves to an empty install, so the image's contents follow from
+# `envs/pyproject.toml` alone rather than from a per-cache decision that has to agree with it.
+#
+# pip cannot read [project.dependencies] without building the project, so install the (virtual)
+# project from a throwaway build directory.
+COPY envs/pyproject.toml /tmp/build/pyproject.toml
+RUN pip install /tmp/build \
+    && rm -rf /tmp/build
+
 CMD ["python", "--version"]
