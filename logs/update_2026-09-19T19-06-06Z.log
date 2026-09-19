@@ -1,0 +1,4 @@
+2026-09-19T19:06:06Z INFO Logging to /tmp/logs/update_2026-09-19T19-06-06Z.log.
+2026-09-19T19:06:06Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-09-19T19:06:07Z INFO Processing 0 items (50991 already recorded).
+2026-09-19T19:06:07Z INFO Wrote 50991 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.jsonl (0 new, 0 failed) in 0.0 min (peak memory 88 MiB).
