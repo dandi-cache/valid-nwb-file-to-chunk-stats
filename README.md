@@ -53,12 +53,11 @@ If you only plan to use this cache infrequently or from disparate locations, you
 ```python
 import gzip
 import json
-
-import requests
+import urllib.request
 
 url = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-chunk-stats/refs/heads/dist/derivatives/valid_nwb_file_to_chunk_stats.jsonl.gz"
-response = requests.get(url)
-lines = gzip.decompress(data=response.content).decode("utf-8").splitlines()
+with urllib.request.urlopen(url) as response:
+    lines = gzip.decompress(data=response.read()).decode("utf-8").splitlines()
 valid_nwb_file_to_chunk_stats = [json.loads(line) for line in lines]
 ```
 
