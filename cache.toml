@@ -22,6 +22,9 @@ name = "content-id-to-valid-nwb-file"
 # of this number; it is declared once here.
 [operations.update]
 limit = 500
+# A testing run streams whole NWB files from the archive, so two is already a minute or so of
+# work and is enough to exercise the read, the walk, the error routing and the write.
+testing_limit = 2
 
 # The published branches describe this repository as a BIDS study dataset, through a
 # `dataset_description.json` with `DatasetType: "study"`. The pipeline renders that file from this
