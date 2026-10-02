@@ -20,6 +20,12 @@ name = "content-id-to-valid-nwb-file"
 # Streaming and walking each file is heavy enough that a single run cannot clear the backlog, so a
 # run advances it by a bounded batch. The workflow and the shell script each carried their own copy
 # of this number; it is declared once here.
+#
+# Sized from this cache's own update logs, slow files included: resampling 11,817 timed items puts a
+# run of 500 at about 91 minutes typically and 262 at the 99th percentile, inside the job's
+# 330-minute timeout with margin. The margin matters, because a run that times out publishes nothing
+# it did. It stays at 500: a few files here take over an hour each, so a larger batch is the one
+# most likely to catch two of them.
 [operations.update]
 limit = 500
 # A testing run streams whole NWB files from the archive, so two is already a minute or so of

@@ -10,7 +10,11 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 8/3 * * *"  # Every three hours from 08:00 UTC, working through the backlog 500 files at a time.
+    # GitHub delays and drops scheduled runs that fall on the hour, so this one runs at a minute of
+    # its own. Hourly, so the runs follow one another: a run still going when the hour comes round
+    # leaves the next one queued, and the shared action skips that one once it starts, so a long run
+    # costs at most an hour of idle rather than waiting for a fixed slot.
+    - cron: "3 * * * *"
   workflow_dispatch:
     inputs:
       testing:
