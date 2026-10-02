@@ -88,21 +88,16 @@ def chunk_statistics(h5py_file, /) -> dict:
 
     # A dataset reachable under several names must still be measured once. An object's address (its
     # file number plus its address within that file) identifies the underlying object rather than
-    # the path used to reach it, so recording the ones already seen deduplicates multiply linked
-    # datasets.
-    visited_object_ids: set[tuple[tuple[int, int], tuple[int, int]]] = set()
+    # the path used to reach it, so recording the ones already seen both deduplicates multiply
+    # linked datasets and keeps a link cycle from looping.
+    visited_object_ids: set[tuple[int, int]] = set()
 
-    def _visit(name: str, link: object) -> None:
+    def _visit(_name: str, obj: object) -> None:
         nonlocal number_virtual_or_external
-        # Hard links only, which is the tree `visititems` walked and every published value was
-        # computed over: a soft or external link names an object rather than containing it.
-        if not isinstance(link, h5py.HardLink):
-            return
-        obj = h5py_file[name]
         if not isinstance(obj, h5py.Dataset):
             return
-        object_info = h5py.h5g.get_objinfo(obj.id)
-        object_id = (object_info.fileno, object_info.objno)
+        object_info = h5py.h5o.get_info(obj.id)
+        object_id = (object_info.fileno, object_info.addr)
         if object_id in visited_object_ids:
             return
         visited_object_ids.add(object_id)
@@ -113,14 +108,7 @@ def chunk_statistics(h5py_file, /) -> dict:
             return
         per_dataset_statistics.append(statistics)
 
-    # Over links rather than objects. `visititems` is `H5Ovisit`, which collects the full object
-    # info of everything it passes, and for a chunked dataset that includes the size of its chunk
-    # index -- so it reads the whole index, one range request per node on a streamed file. On the
-    # archive's most heavily chunked files that was half an hour per file, spent before this code
-    # saw a single dataset. `visititems_links` is `H5Lvisit`, which reads only the groups' links;
-    # it walks hard-linked groups once each, so a link cycle still terminates. `get_objinfo` is
-    # the cheap counterpart of `h5py.h5o.get_info` for the same reason.
-    h5py_file.visititems_links(_visit)
+    h5py_file.visititems(_visit)
 
     chunk_counts = [statistics["n_chunks"] for statistics in per_dataset_statistics]
     chunked_chunk_counts = [
