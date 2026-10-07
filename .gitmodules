@@ -3,3 +3,6 @@
 	url = https://github.com/dandi-cache/content-id-to-valid-nwb-file.git
 	datalad-url = https://github.com/dandi-cache/content-id-to-valid-nwb-file.git
 	branch = derivatives
+[submodule "workspace"]
+	path = workspace
+	url = ./workspace
