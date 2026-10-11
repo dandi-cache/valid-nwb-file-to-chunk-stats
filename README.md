@@ -53,16 +53,14 @@ It can be read with the standard library alone, or opened remotely with any Zarr
 
 ### Python API (recommended)
 
-Each chunk file is gzip-compressed [JSON Lines](https://jsonlines.org/), so read them in order as you would any JSONL files; `stream/zarr.json` says how many there are:
+The chunk files are gzip-compressed [JSON Lines](https://jsonlines.org/): list them, then read them in order as you would any JSONL files.
 
 ```python
-import gzip, json, math, urllib.request
+import gzip, json, urllib.request
 
-store = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-chunk-stats/refs/heads/dist/derivatives/valid_nwb_file_to_chunk_stats.zarr"
-def fetch(path): return urllib.request.urlopen(f"{store}/{path}").read()
-array = json.loads(fetch("stream/zarr.json"))
-chunks = math.ceil(array["shape"][0] / array["chunk_grid"]["configuration"]["chunk_shape"][0])
-valid_nwb_file_to_chunk_stats = {key: value for index in range(chunks) for line in gzip.decompress(fetch(f"stream/c/{index}")).decode().splitlines() if line for key, value in json.loads(line).items()}
+chunks = "https://api.github.com/repos/dandi-cache/valid-nwb-file-to-chunk-stats/contents/derivatives/valid_nwb_file_to_chunk_stats.zarr/stream/c?ref=dist"
+files = sorted((entry["download_url"] for entry in json.load(urllib.request.urlopen(chunks))), key=lambda url: int(url.rsplit("/", 1)[1]))
+valid_nwb_file_to_chunk_stats = {key: value for url in files for line in gzip.decompress(urllib.request.urlopen(url).read()).decode().splitlines() if line for key, value in json.loads(line).items()}
 ```
 
 Each line is a single-entry mapping of `{"<content_id>": <chunk_statistics>}`.
