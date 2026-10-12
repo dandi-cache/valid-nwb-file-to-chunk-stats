@@ -1,0 +1,27 @@
+Error while probing the asset layout for `a055b2d2-9c42-4215-935a-484145663824`!
+
+<class 'botocore.exceptions.ClientError'>: An error occurred (503) when calling the HeadObject operation (reached max retries: 2): Service Unavailable
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 139, in compute_chunk_statistics
+    if dandi_cache.nwb.detect_layout(content_id) == dandi_cache.nwb.ZARR:
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/nwb.py", line 87, in detect_layout
+    return HDF5 if s3.object_exists(client, s3.blob_key(content_id)) else ZARR
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/s3.py", line 106, in object_exists
+    client.head_object(Bucket=bucket, Key=key)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/venv/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (503) when calling the HeadObject operation (reached max retries: 2): Service Unavailable
+
+
