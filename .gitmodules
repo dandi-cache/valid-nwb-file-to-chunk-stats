@@ -5,5 +5,5 @@
 	branch = derivatives
 [submodule "workspace"]
 	path = workspace
-	url = .
+	url = ../valid-nwb-file-to-chunk-stats.git
 	datalad-url = https://github.com/dandi-cache/valid-nwb-file-to-chunk-stats.git
