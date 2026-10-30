@@ -1,0 +1,5 @@
+2026-10-30T06:59:51Z INFO Logging to /tmp/logs/update_2026-10-30T06-59-51Z.log.
+2026-10-30T06:59:51Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-10-30T06:59:53Z INFO Processing 0 items (197088 already recorded).
+2026-10-30T06:59:53Z INFO Wrote 197088 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (0 new, 0 failed) in 0.0 min (peak memory 448 MiB).
+2026-10-30T06:59:53Z INFO Progress: 197,050 of 197,050 candidates recorded (100.0%).
