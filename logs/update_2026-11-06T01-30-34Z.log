@@ -1,0 +1,56 @@
+2026-11-06T01:30:34Z INFO Logging to /tmp/logs/update_2026-11-06T01-30-34Z.log.
+2026-11-06T01:30:34Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-06T01:30:37Z INFO Processing 50 items (197486 already recorded).
+2026-11-06T01:30:47Z INFO [1/50] 0246c6ee-6f83-4f70-81a4-580f5ef8e915: 4403 chunks; 9.6 s; peak memory 349 MiB.
+2026-11-06T01:30:55Z INFO [2/50] 1030d496-3e8d-4bf1-a713-5604efb0f396: 3232 chunks; 8.1 s; peak memory 349 MiB.
+2026-11-06T01:31:03Z INFO [3/50] 10496aa8-961d-48df-9a6b-9cc601e4e367: 3082 chunks; 8.0 s; peak memory 349 MiB.
+2026-11-06T01:31:11Z INFO [4/50] 10e63e49-1af1-4cb0-863a-89fde9e4a6b0: 3623 chunks; 8.5 s; peak memory 349 MiB.
+2026-11-06T01:31:13Z INFO [5/50] 170bca2e-c8ef-4a96-bb54-38a6e5dc6d8f: 466 chunks; 2.2 s; peak memory 349 MiB.
+2026-11-06T01:31:20Z INFO [6/50] 1c63e875-e95c-4438-9e72-23fe018e968d: 2882 chunks; 7.0 s; peak memory 349 MiB.
+2026-11-06T01:31:31Z INFO [7/50] 1ce91d27-8c0c-414a-9ef0-a9e19ec3ae6d: 4422 chunks; 10.9 s; peak memory 349 MiB.
+2026-11-06T01:31:42Z INFO [8/50] 244aae52-8b0f-4b62-af2a-1272d4c25309: 4353 chunks; 10.6 s; peak memory 349 MiB.
+2026-11-06T01:31:44Z INFO [9/50] 276a351e-f701-4de8-9e53-9c633f70d02d: 324 chunks; 1.9 s; peak memory 349 MiB.
+2026-11-06T01:31:54Z INFO [10/50] 2d0b62d3-8558-4a92-93f2-3b68a24ef513: 3683 chunks; 9.9 s; peak memory 349 MiB.
+2026-11-06T01:32:02Z INFO [11/50] 30c644e3-5739-48fa-a91c-689a5d53f2cc: 3483 chunks; 8.5 s; peak memory 349 MiB.
+2026-11-06T01:32:05Z INFO [12/50] 4062c448-8063-4339-814e-694898316f1e: 474 chunks; 2.8 s; peak memory 349 MiB.
+2026-11-06T01:32:16Z INFO [13/50] 44188af7-8aa8-4fd1-b213-6f26b32ed378: 4283 chunks; 10.7 s; peak memory 349 MiB.
+2026-11-06T01:32:24Z INFO [14/50] 44bf439a-a2bb-4413-be88-85474d45754b: 3141 chunks; 7.9 s; peak memory 349 MiB.
+2026-11-06T01:32:34Z INFO [15/50] 500488b3-35d8-4e38-bbd7-0d5b67f53a4f: 3933 chunks; 10.3 s; peak memory 349 MiB.
+2026-11-06T01:32:48Z INFO [16/50] 55115249-7604-4572-9f4d-ef4f7ee6ce20: 5403 chunks; 14.0 s; peak memory 349 MiB.
+2026-11-06T01:32:57Z INFO [17/50] 59240cb7-7b0f-4bac-9ca3-54f761f7745c: 3791 chunks; 9.1 s; peak memory 349 MiB.
+2026-11-06T01:33:06Z INFO [18/50] 614dbf33-e4bf-43fb-a26b-d67bb5ea238d: 3651 chunks; 9.1 s; peak memory 349 MiB.
+2026-11-06T01:33:08Z INFO [19/50] 685eb9d1-c9a2-4edd-a471-9f521586ea13: 466 chunks; 2.2 s; peak memory 349 MiB.
+2026-11-06T01:33:16Z INFO [20/50] 689be7a5-b2e7-4c2d-b5d9-c79fe0bd8b28: 3232 chunks; 7.5 s; peak memory 349 MiB.
+2026-11-06T01:33:17Z INFO [21/50] 69c8d892-5c02-4947-89c5-23eb444aeeb4: 39 chunks; 0.8 s; peak memory 349 MiB.
+2026-11-06T01:33:24Z INFO [22/50] 6a9001cb-78e8-4f8a-ae08-1180c4887211: 3162 chunks; 7.7 s; peak memory 349 MiB.
+2026-11-06T01:33:34Z INFO [23/50] 6d492d3d-f103-4103-b07b-d7793a27dfe7: 4212 chunks; 10.0 s; peak memory 349 MiB.
+2026-11-06T01:33:37Z INFO [24/50] 6dd64378-b98b-4195-a8aa-7db2a9b8a817: 476 chunks; 2.4 s; peak memory 349 MiB.
+2026-11-06T01:33:37Z INFO [25/50] 7771c0e6-e596-4bbc-845b-d8db5ba2b948: 39 chunks; 0.7 s; peak memory 349 MiB.
+2026-11-06T01:33:42Z INFO [26/50] 7ae2da4b-af3a-40c0-a2b4-9cd21d52a4f1: 2093 chunks; 5.0 s; peak memory 349 MiB.
+2026-11-06T01:33:48Z INFO [27/50] 803dc674-d5b3-461e-92d7-718a4dae7f9a: 2361 chunks; 6.1 s; peak memory 349 MiB.
+2026-11-06T01:33:59Z INFO [28/50] 8452d85c-0330-477a-ad3a-b4ee1a6c9fb1: 4523 chunks; 10.7 s; peak memory 349 MiB.
+2026-11-06T01:34:01Z INFO [29/50] 852e3c46-bea6-4d13-a85e-9a40dd8b1232: 466 chunks; 2.0 s; peak memory 349 MiB.
+2026-11-06T01:34:12Z INFO [30/50] 8abb673f-2b36-4dcc-a839-7b76a2b6961d: 4283 chunks; 10.7 s; peak memory 349 MiB.
+2026-11-06T01:34:19Z INFO [31/50] 9fa103a7-91fd-4186-88b3-f84f2aa3b879: 3232 chunks; 7.3 s; peak memory 349 MiB.
+2026-11-06T01:34:28Z INFO [32/50] ab647377-c3e1-4809-9407-31f8d162d5cb: 3381 chunks; 8.7 s; peak memory 349 MiB.
+2026-11-06T01:34:40Z INFO [33/50] ad9b301a-1124-48e4-bf9d-1732f07af03c: 5393 chunks; 12.4 s; peak memory 349 MiB.
+2026-11-06T01:34:55Z INFO [34/50] b56ebbc4-e225-40dc-8354-841206756397: 6833 chunks; 15.4 s; peak memory 351 MiB.
+2026-11-06T01:35:03Z INFO [35/50] beb17cdc-e9de-44f6-a1ff-6dc0e944082f: 2723 chunks; 7.1 s; peak memory 360 MiB.
+2026-11-06T01:35:13Z INFO [36/50] bf1e4306-4023-4e62-97f4-fa449569f8a8: 4403 chunks; 10.3 s; peak memory 369 MiB.
+2026-11-06T01:35:15Z INFO [37/50] c486c421-333c-47ba-a5a2-0ad8b86d7978: 457 chunks; 2.1 s; peak memory 369 MiB.
+2026-11-06T01:35:24Z INFO [38/50] c4a1ffbe-5968-43f0-ab22-7c3671cc8eaa: 3323 chunks; 9.4 s; peak memory 369 MiB.
+2026-11-06T01:35:25Z INFO [39/50] c6cebda6-6e10-4cba-8481-f7eb2470d652: 39 chunks; 0.8 s; peak memory 369 MiB.
+2026-11-06T01:35:29Z INFO [40/50] c74ad357-f9f0-437e-bdce-3872c860f7ce: 1241 chunks; 4.0 s; peak memory 369 MiB.
+2026-11-06T01:35:38Z INFO [41/50] d00a235f-b411-4f27-b9b2-5295357fadde: 3283 chunks; 8.5 s; peak memory 369 MiB.
+2026-11-06T01:35:48Z INFO [42/50] d40d4459-c844-48fa-b222-eeddbb5775df: 3633 chunks; 10.3 s; peak memory 369 MiB.
+2026-11-06T01:35:53Z INFO [43/50] d426f3db-88bc-4ff0-b042-ccc476a1ea43: 2041 chunks; 5.1 s; peak memory 369 MiB.
+2026-11-06T01:36:03Z INFO [44/50] d4d7f5ec-bfc5-40cf-9984-d9d1ca7a3e13: 4143 chunks; 10.1 s; peak memory 370 MiB.
+2026-11-06T01:36:12Z INFO [45/50] d7fd71fb-7530-41fa-bad5-8accf22f676c: 3622 chunks; 8.8 s; peak memory 370 MiB.
+2026-11-06T01:36:14Z INFO [46/50] dcc0eb65-288a-461a-a74d-e25b8aee4c60: 439 chunks; 1.8 s; peak memory 370 MiB.
+2026-11-06T01:36:24Z INFO [47/50] e0e6e24e-3945-4ecf-9c8f-4bc0a26db0c2: 4213 chunks; 9.6 s; peak memory 370 MiB.
+2026-11-06T01:36:30Z INFO [48/50] f195f9df-6d47-496f-a8f2-22c75c569d9a: 1973 chunks; 6.3 s; peak memory 370 MiB.
+2026-11-06T01:36:35Z INFO [49/50] f494c8f8-dd67-48d8-be89-4d63edab00e6: 1882 chunks; 5.2 s; peak memory 371 MiB.
+2026-11-06T01:36:46Z INFO [50/50] f68a4f64-4709-4061-b62f-c6f87bd08c0c: 4843 chunks; 10.6 s; peak memory 371 MiB.
+2026-11-06T01:36:46Z INFO [50/50] f68a4f64-4709-4061-b62f-c6f87bd08c0c: checkpointed 197536 new records.
+2026-11-06T01:36:46Z INFO Wrote 197536 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (50 new, 0 failed) in 6.1 min (peak memory 543 MiB).
+2026-11-06T01:36:46Z INFO Progress: 197,489 of 197,489 candidates recorded (100.0%).
