@@ -1,0 +1,12 @@
+2026-11-07T02:56:41Z INFO Logging to /tmp/logs/update_2026-11-07T02-56-41Z.log.
+2026-11-07T02:56:41Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-07T02:56:44Z INFO Processing 7 items (198424 already recorded).
+2026-11-07T02:56:46Z INFO [1/7] fe718451-95c1-442f-8c75-9a29f00f43a3: 39 chunks; 1.7 s; peak memory 351 MiB.
+2026-11-07T02:56:47Z INFO [2/7] fe78c72c-e1f7-4b49-a338-25f029236797: 39 chunks; 1.5 s; peak memory 351 MiB.
+2026-11-07T02:56:49Z INFO [3/7] feb2cdef-7d97-405a-970c-ec717b4d1be2: 39 chunks; 1.5 s; peak memory 351 MiB.
+2026-11-07T02:56:50Z INFO [4/7] ff5b1f94-c74b-4a90-9d99-fb200460f05a: 39 chunks; 1.5 s; peak memory 351 MiB.
+2026-11-07T02:56:51Z INFO [5/7] ff693da8-beb7-4ff7-bf36-bb7ce7aba8ee: 39 chunks; 1.4 s; peak memory 351 MiB.
+2026-11-07T02:56:53Z INFO [6/7] ff9e180c-4a89-44c1-a264-9b8696039b31: 39 chunks; 1.4 s; peak memory 351 MiB.
+2026-11-07T02:56:54Z INFO [7/7] ffd61b09-16df-4e2f-8e05-cbc8149ed2db: 39 chunks; 1.5 s; peak memory 351 MiB.
+2026-11-07T02:56:55Z INFO Wrote 198431 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (7 new, 0 failed) in 0.2 min (peak memory 497 MiB).
+2026-11-07T02:56:55Z INFO Progress: 198,384 of 198,384 candidates recorded (100.0%).
