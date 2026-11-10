@@ -1,0 +1,6 @@
+2026-11-10T00:08:37Z INFO Logging to /tmp/logs/update_2026-11-10T00-08-37Z.log.
+2026-11-10T00:08:37Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-10T00:08:40Z INFO Processing 1 items (198534 already recorded).
+2026-11-10T00:09:52Z INFO [1/1] 12fdc641-306b-4c83-8112-8244e4a846e1: 33024 chunks; 71.5 s; peak memory 445 MiB.
+2026-11-10T00:09:52Z INFO Wrote 198535 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (1 new, 0 failed) in 1.2 min (peak memory 618 MiB).
+2026-11-10T00:09:52Z INFO Progress: 198,484 of 198,484 candidates recorded (100.0%).
