@@ -1,0 +1,22 @@
+2026-11-20T11:19:19Z INFO Logging to /tmp/logs/update_2026-11-20T11-19-19Z.log.
+2026-11-20T11:19:19Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-20T11:19:22Z INFO Processing 16 items (220972 already recorded).
+2026-11-20T11:19:38Z INFO [1/16] 041a83f2-342c-482f-89fe-3d74c2227524: 6624 chunks; 16.1 s; peak memory 381 MiB.
+2026-11-20T11:20:25Z INFO [2/16] 50028ecf-169b-4543-8be2-15f9f2b30461: 21602 chunks; 46.9 s; peak memory 425 MiB.
+2026-11-20T11:21:09Z INFO [3/16] 5d69ad3e-52c0-4cc6-b730-5626f0302beb: 22334 chunks; 43.9 s; peak memory 426 MiB.
+2026-11-20T11:21:58Z INFO [4/16] 6b3fe7c8-2c9a-483f-a269-3f8cf5148927: 21602 chunks; 49.5 s; peak memory 426 MiB.
+2026-11-20T11:22:13Z INFO [5/16] 6dc93eda-4389-46f1-94db-a286ea696c5e: 7112 chunks; 14.9 s; peak memory 427 MiB.
+2026-11-20T11:22:29Z INFO [6/16] 79fc14d1-0e93-4fa8-8eaa-d8ce2b77bdc9: 6624 chunks; 15.3 s; peak memory 427 MiB.
+2026-11-20T11:22:46Z INFO [7/16] 86919939-517b-49c1-a3b9-89c468fc68ef: 7548 chunks; 17.7 s; peak memory 427 MiB.
+2026-11-20T11:23:02Z INFO [8/16] 87d8ecb9-1527-4141-b4d6-61eb4d222473: 6624 chunks; 15.4 s; peak memory 427 MiB.
+2026-11-20T11:23:17Z INFO [9/16] 87e54056-fa8a-4b83-91a3-4127b59052ee: 6560 chunks; 15.3 s; peak memory 427 MiB.
+2026-11-20T11:23:32Z INFO [10/16] 9726a83e-6d9c-4470-9b39-ce150a00c79b: 6560 chunks; 15.2 s; peak memory 427 MiB.
+2026-11-20T11:24:17Z INFO [11/16] 9e35b17f-1b16-492f-abb7-9aee15707910: 21602 chunks; 45.2 s; peak memory 444 MiB.
+2026-11-20T11:25:04Z INFO [12/16] a59ebd34-eb03-4acc-b624-bb542f4e7a32: 21602 chunks; 46.3 s; peak memory 444 MiB.
+2026-11-20T11:25:19Z INFO [13/16] a930805b-5463-484b-abd3-e9f3ad16235c: 6624 chunks; 15.1 s; peak memory 445 MiB.
+2026-11-20T11:26:01Z INFO [14/16] acd93bae-74fb-4358-aaaa-4f8da71e19ef: 21602 chunks; 42.7 s; peak memory 445 MiB.
+2026-11-20T11:26:46Z INFO [15/16] b64bd9c6-247a-48d6-a6ad-dcdc041a68b0: 21602 chunks; 45.0 s; peak memory 445 MiB.
+2026-11-20T11:27:09Z INFO [16/16] b8833246-4517-4e93-98b7-0281a7e0cf95: 10223 chunks; 22.2 s; peak memory 445 MiB.
+2026-11-20T11:27:09Z INFO Wrote 220988 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (16 new, 0 failed) in 7.8 min (peak memory 629 MiB).
+2026-11-20T11:27:09Z INFO Batch summary: considered=16 new=16 failed=0 left=0 stopped=none
+2026-11-20T11:27:09Z INFO Progress: 220,932 of 220,932 candidates recorded (100.0%).
