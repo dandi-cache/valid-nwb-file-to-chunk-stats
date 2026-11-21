@@ -1,0 +1,70 @@
+2026-11-21T17:20:59Z INFO Logging to /tmp/logs/update_2026-11-21T17-20-59Z.log.
+2026-11-21T17:20:59Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-21T17:21:02Z INFO Processing 63 items (221012 already recorded).
+2026-11-21T17:21:06Z INFO [1/63] 01153b54-8cc0-4ec4-925f-0fbfbd398565: 281 chunks; 4.3 s; peak memory 381 MiB.
+2026-11-21T17:21:07Z INFO [2/63] 04b00144-8f70-41c3-8566-552051d71885: 72 chunks; 1.2 s; peak memory 381 MiB.
+2026-11-21T17:21:11Z INFO [3/63] 086b24f6-55c1-4010-841d-cdb2c11a0cee: 292 chunks; 4.2 s; peak memory 381 MiB.
+2026-11-21T17:21:16Z INFO [4/63] 0e84a4a4-c8c8-4820-9a8d-d48211f2772e: 292 chunks; 4.2 s; peak memory 381 MiB.
+2026-11-21T17:21:17Z INFO [5/63] 1421772f-7a9e-4bad-b786-163f1034372b: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:21:19Z INFO [6/63] 1c987e6b-17c7-4c42-a629-aad65c4e9145: 210 chunks; 2.8 s; peak memory 381 MiB.
+2026-11-21T17:21:22Z INFO [7/63] 21d0ca4b-6624-4f3f-bbef-9012305396c1: 201 chunks; 2.5 s; peak memory 381 MiB.
+2026-11-21T17:21:26Z INFO [8/63] 29de8825-33bd-400c-bdf1-0a4c6e18a6a3: 272 chunks; 4.3 s; peak memory 381 MiB.
+2026-11-21T17:21:29Z INFO [9/63] 2aa8a64e-7eda-4210-90a5-74b6a12292a1: 201 chunks; 2.6 s; peak memory 381 MiB.
+2026-11-21T17:21:30Z INFO [10/63] 2cbaaef1-9ff4-4655-867f-af1b46c953fd: 117 chunks; 1.2 s; peak memory 381 MiB.
+2026-11-21T17:21:35Z INFO [11/63] 30fb4ff3-3d7d-443d-8984-e0c8b9875459: 324 chunks; 4.6 s; peak memory 381 MiB.
+2026-11-21T17:21:37Z INFO [12/63] 3335e9b6-191b-4d5d-95a9-d4068021e590: 182 chunks; 2.3 s; peak memory 381 MiB.
+2026-11-21T17:21:41Z INFO [13/63] 34bf9e0b-058f-4a80-a4a9-437786ed3a51: 287 chunks; 4.1 s; peak memory 381 MiB.
+2026-11-21T17:21:42Z INFO [14/63] 3c7d5475-4d0e-46f3-b158-73664edbd0b5: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:21:48Z INFO [15/63] 3dda6d52-66a4-48ff-aae4-de1cd769e0b5: 385 chunks; 5.6 s; peak memory 381 MiB.
+2026-11-21T17:21:52Z INFO [16/63] 40e1cc41-29ed-45c3-98a2-4b4961446ea1: 296 chunks; 4.2 s; peak memory 381 MiB.
+2026-11-21T17:21:54Z INFO [17/63] 416ca45f-bc6f-4ba7-8568-25b2537fb7d3: 135 chunks; 1.6 s; peak memory 381 MiB.
+2026-11-21T17:21:56Z INFO [18/63] 4bba4513-bc1b-4255-8202-2c5b4641b287: 201 chunks; 2.5 s; peak memory 381 MiB.
+2026-11-21T17:22:00Z INFO [19/63] 4dcf3be1-8c61-475d-bd87-b0c5d3216f61: 284 chunks; 3.9 s; peak memory 381 MiB.
+2026-11-21T17:22:04Z INFO [20/63] 53e9be81-b3e0-424e-8429-40010ee5b50c: 282 chunks; 4.2 s; peak memory 381 MiB.
+2026-11-21T17:22:08Z INFO [21/63] 5abb68f8-8ec4-498f-9934-37c68018c06d: 264 chunks; 3.6 s; peak memory 381 MiB.
+2026-11-21T17:22:11Z INFO [22/63] 6a090ab9-51a5-4136-a232-0bddd0327216: 211 chunks; 2.9 s; peak memory 381 MiB.
+2026-11-21T17:22:12Z INFO [23/63] 6ac5e0e9-d60d-45a3-a847-9d274c667e94: 72 chunks; 1.0 s; peak memory 381 MiB.
+2026-11-21T17:22:16Z INFO [24/63] 6ba17fef-e94f-4998-9143-d38abb63dd88: 258 chunks; 3.7 s; peak memory 381 MiB.
+2026-11-21T17:22:20Z INFO [25/63] 6cf9e7f0-d61c-4fdb-8a69-d302ab11f6e4: 349 chunks; 4.8 s; peak memory 381 MiB.
+2026-11-21T17:22:24Z INFO [26/63] 72c0cb33-c41c-4f75-857e-85ab42f2aa16: 262 chunks; 3.8 s; peak memory 381 MiB.
+2026-11-21T17:22:27Z INFO [27/63] 7b210e67-93b9-4dd4-996a-5803721cefa7: 182 chunks; 2.3 s; peak memory 381 MiB.
+2026-11-21T17:22:28Z INFO [28/63] 7bd4c14b-36bb-4880-af37-104c064a85eb: 117 chunks; 1.2 s; peak memory 381 MiB.
+2026-11-21T17:22:32Z INFO [29/63] 7cbe981f-f586-4bbc-ac0c-d6828758df19: 272 chunks; 4.0 s; peak memory 381 MiB.
+2026-11-21T17:22:35Z INFO [30/63] 7ccd338e-a159-461f-944a-ffd8be002170: 210 chunks; 3.0 s; peak memory 381 MiB.
+2026-11-21T17:22:39Z INFO [31/63] 818a0ae9-da89-4538-b48f-eedd68fe8c6c: 277 chunks; 3.8 s; peak memory 381 MiB.
+2026-11-21T17:22:43Z INFO [32/63] 88a479ac-041d-484e-b6fd-380284600b70: 282 chunks; 4.3 s; peak memory 381 MiB.
+2026-11-21T17:22:46Z INFO [33/63] 8a465094-0cb1-4625-8cb0-82105b9a51a2: 201 chunks; 2.7 s; peak memory 381 MiB.
+2026-11-21T17:22:50Z INFO [34/63] 8cc89deb-4f19-45b3-ba07-33d210eeba94: 275 chunks; 4.2 s; peak memory 381 MiB.
+2026-11-21T17:22:54Z INFO [35/63] 8ceae0a3-aaaa-4c6f-98b3-5740cb3d003b: 302 chunks; 4.4 s; peak memory 381 MiB.
+2026-11-21T17:22:59Z INFO [36/63] 8d2fc9b0-d912-43ea-b332-aebf04cab191: 325 chunks; 4.8 s; peak memory 381 MiB.
+2026-11-21T17:23:03Z INFO [37/63] 8ee54a28-a365-4e96-8c38-25437ed81435: 253 chunks; 3.9 s; peak memory 381 MiB.
+2026-11-21T17:23:04Z INFO [38/63] 91744734-d02a-4cf6-9389-1209d9c4db05: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:23:08Z INFO [39/63] 987f482c-2290-4aaa-b4fc-466d5f9079fb: 306 chunks; 4.3 s; peak memory 381 MiB.
+2026-11-21T17:23:13Z INFO [40/63] 9e7fa49a-f222-4dbb-8b65-5e0239a02e89: 292 chunks; 4.3 s; peak memory 381 MiB.
+2026-11-21T17:23:17Z INFO [41/63] a68dac5e-2753-415f-bcf7-5aa9fedc9ff8: 282 chunks; 4.1 s; peak memory 381 MiB.
+2026-11-21T17:23:20Z INFO [42/63] a854346b-cae6-4325-be68-38535a397f34: 274 chunks; 3.6 s; peak memory 381 MiB.
+2026-11-21T17:23:23Z INFO [43/63] af67e774-13df-4472-a127-9a569a29ed82: 239 chunks; 3.2 s; peak memory 381 MiB.
+2026-11-21T17:23:27Z INFO [44/63] b5ebc19f-4799-4ca0-9dae-40edec4b8149: 254 chunks; 3.5 s; peak memory 381 MiB.
+2026-11-21T17:23:28Z INFO [45/63] ba0cd5a2-8148-4559-9369-4c1577d4bcba: 125 chunks; 1.4 s; peak memory 381 MiB.
+2026-11-21T17:23:34Z INFO [46/63] be117e80-130d-499f-82bb-48b63fa577c4: 363 chunks; 5.8 s; peak memory 381 MiB.
+2026-11-21T17:23:35Z INFO [47/63] c0589398-125b-4f0a-b0ce-56570e6d8193: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:23:39Z INFO [48/63] c31319ac-eed0-4673-aed9-e47920caac34: 279 chunks; 3.4 s; peak memory 381 MiB.
+2026-11-21T17:23:40Z INFO [49/63] c886ce78-07de-4c00-a88b-6066891c163f: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:23:42Z INFO [50/63] c9bc68c6-eb07-4414-ae88-df902e7b7f60: 173 chunks; 2.1 s; peak memory 381 MiB.
+2026-11-21T17:23:42Z INFO [50/63] c9bc68c6-eb07-4414-ae88-df902e7b7f60: checkpointed 221062 new records.
+2026-11-21T17:23:45Z INFO [51/63] d16be2d6-5518-4812-9fe9-5572672b6645: 254 chunks; 3.4 s; peak memory 381 MiB.
+2026-11-21T17:23:46Z INFO [52/63] d3493b89-09c6-4cdc-a735-56a7ca06a8ae: 72 chunks; 1.1 s; peak memory 381 MiB.
+2026-11-21T17:23:48Z INFO [53/63] d50a5baf-91e8-4768-8104-d92749ecc5f2: 134 chunks; 1.6 s; peak memory 381 MiB.
+2026-11-21T17:23:49Z INFO [54/63] dbf81563-3254-4615-b4e1-2d44d6a697e3: 72 chunks; 1.2 s; peak memory 381 MiB.
+2026-11-21T17:23:51Z INFO [55/63] e1c455f9-eb45-4faf-98b8-f325cdabb68d: 134 chunks; 1.7 s; peak memory 381 MiB.
+2026-11-21T17:23:55Z INFO [56/63] e4ae6c87-84d8-428e-a15e-67e54a9a2205: 315 chunks; 4.4 s; peak memory 381 MiB.
+2026-11-21T17:23:59Z INFO [57/63] e8b7b444-6dad-45e7-a239-bb63eab8d184: 257 chunks; 3.9 s; peak memory 381 MiB.
+2026-11-21T17:24:06Z INFO [58/63] eb373d3d-3f68-465a-8bc4-ff4ac7a2cf62: 444 chunks; 6.5 s; peak memory 382 MiB.
+2026-11-21T17:24:07Z INFO [59/63] f4a11095-f336-4072-b54d-9518fc4e2ae2: 72 chunks; 1.1 s; peak memory 382 MiB.
+2026-11-21T17:24:08Z INFO [60/63] f868544e-c333-4a2c-a501-96d6ad8eaef4: 72 chunks; 1.2 s; peak memory 382 MiB.
+2026-11-21T17:24:09Z INFO [61/63] f89c751a-3050-4ded-bce2-38e13ab2107b: 72 chunks; 1.1 s; peak memory 382 MiB.
+2026-11-21T17:24:13Z INFO [62/63] fb9f6da5-3da1-44d4-b2f1-854f6e7b5519: 259 chunks; 3.3 s; peak memory 382 MiB.
+2026-11-21T17:24:15Z INFO [63/63] fbcf9230-d10d-4565-9938-cc5da70e685f: 226 chunks; 2.8 s; peak memory 382 MiB.
+2026-11-21T17:24:16Z INFO Wrote 221075 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (63 new, 0 failed) in 3.2 min (peak memory 565 MiB).
+2026-11-21T17:24:16Z INFO Batch summary: considered=63 new=63 failed=0 left=0 stopped=none
+2026-11-21T17:24:16Z INFO Progress: 221,019 of 221,019 candidates recorded (100.0%).
