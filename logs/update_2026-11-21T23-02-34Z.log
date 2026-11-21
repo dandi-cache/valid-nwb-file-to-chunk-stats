@@ -1,0 +1,20 @@
+2026-11-21T23:02:34Z INFO Logging to /tmp/logs/update_2026-11-21T23-02-34Z.log.
+2026-11-21T23:02:34Z INFO Update valid-nwb-file-to-chunk-stats (base directory /tmp).
+2026-11-21T23:02:37Z INFO Processing 14 items (221075 already recorded).
+2026-11-21T23:02:37Z INFO [1/14] 0718ad42-6019-4b0d-9463-02c29c3ea3e7: 118 chunks; 0.9 s; peak memory 381 MiB.
+2026-11-21T23:02:38Z INFO [2/14] 092f224b-4c84-414a-a468-e7d687c65e1f: 118 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:39Z INFO [3/14] 0a0ffd40-cf9a-464d-866b-05e04a4d7856: 119 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:39Z INFO [4/14] 1d8a1df7-08c5-4e1c-9737-4344b2365693: 118 chunks; 0.5 s; peak memory 381 MiB.
+2026-11-21T23:02:40Z INFO [5/14] 1db0748a-a692-454b-9dfb-d0b7600e45f3: 118 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:40Z INFO [6/14] 1e12a91d-f46c-42c5-8251-fd477f7ec5a4: 118 chunks; 0.5 s; peak memory 381 MiB.
+2026-11-21T23:02:41Z INFO [7/14] 1e19e715-3354-4a50-ab9d-1d8c40451c6d: 118 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:41Z INFO [8/14] 1e5cc810-d8a8-4a0b-85fe-0a50540aab03: 118 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:42Z INFO [9/14] e184e380-1c23-47d8-b107-899bbd7ccd9e: 119 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:02:43Z INFO [10/14] e70db933-efee-4294-9f9d-524cf626a686: 118 chunks; 0.6 s; peak memory 381 MiB.
+2026-11-21T23:07:28Z INFO [11/14] eebbf65f-dc8e-4ebd-b4dc-b5d2b1ec88de: 164992 chunks; 285.3 s; peak memory 881 MiB.
+2026-11-21T23:07:29Z INFO [12/14] f4d87b52-a41e-4c5e-9805-8d0b3d05e9f9: 118 chunks; 0.6 s; peak memory 881 MiB.
+2026-11-21T23:07:29Z INFO [13/14] f5ab0923-9f2b-42fa-9ebd-5b60cb7367b9: 118 chunks; 0.5 s; peak memory 881 MiB.
+2026-11-21T23:07:30Z INFO [14/14] fee981a8-122f-4b95-9ec7-95f4660e48eb: 118 chunks; 0.6 s; peak memory 881 MiB.
+2026-11-21T23:07:30Z INFO Wrote 221089 records to /tmp/derivatives/valid_nwb_file_to_chunk_stats.zarr (14 new, 0 failed) in 4.9 min (peak memory 881 MiB).
+2026-11-21T23:07:30Z INFO Batch summary: considered=14 new=14 failed=0 left=0 stopped=none
+2026-11-21T23:07:30Z INFO Progress: 221,033 of 221,033 candidates recorded (100.0%).
